@@ -3,11 +3,13 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="saucedemoPage.AddIem"/>
       <class name="saucedemoPage.Login_Fail"/>
       <class name="saucedemoPage.Login"/>
       <class name="saucedemoPage.AddItems"/>
       <class name="saucedemoPage.SortByPrice"/>
       <class name="saucedemoPage.Logout"/>
+      <class name="saucedemoPage.Purchase_item"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
