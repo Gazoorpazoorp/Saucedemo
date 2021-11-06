@@ -14,7 +14,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-public class AddItems {
+public class AddIem {
 	@Test
 	public void testNGAsserts() throws Exception{
 		// Source file (spreadsheet)
@@ -33,10 +33,10 @@ public class AddItems {
 		WebDriver driver2 = new FirefoxDriver();
 		
 		// ExtentReports
-		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("AddItems.html");
+		ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter("AddItem.html");
 		ExtentReports extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
-		ExtentTest logStep = extent.createTest("Add Items", "Validate multiple items can be added to the shopping cart");
+		ExtentTest logStep = extent.createTest("Add Specific Item", "Validate that a specific item can be added");
 		
 	logStep.info("Step 1: Open website (Firefox and Chrome)");
 		driver.get("https://www.saucedemo.com/");
@@ -71,26 +71,22 @@ public class AddItems {
         System.out.println(productPage2);
         logStep.pass("Login success"); 
         
-    logStep.info("Step 3: Adding multiple products to the shopping cart");
-		driver.findElement(By.xpath("//*[@class='btn btn_primary btn_small btn_inventory']")).click();
-		driver2.findElement(By.xpath("//*[@class='btn btn_primary btn_small btn_inventory']")).click();
+    logStep.info("Step 3: Adding a specific product to the shopping cart");
+		driver.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-onesie']")).click();
+		driver2.findElement(By.xpath("//*[@id='add-to-cart-sauce-labs-onesie']")).click();
 		Thread.sleep(1000);
-        logStep.pass("Adding first item"); 
-		driver.findElement(By.xpath("//*[@class='btn btn_primary btn_small btn_inventory']")).click();
-		driver2.findElement(By.xpath("//*[@class='btn btn_primary btn_small btn_inventory']")).click();
-		Thread.sleep(1000);
-        logStep.pass("Adding second item"); 
-        
-    logStep.info("Step 4: Asserting that multiple products are added to the shopping cart");		
-        String removeText = "2";
-        String removeText1 = "2";
-		String remove = driver.findElement(By.xpath("//*[@id='shopping_cart_container']//*[text()='2']")).getText();
-		String remove1 = driver2.findElement(By.xpath("//*[@id='shopping_cart_container']//*[text()='2']")).getText();
+        logStep.pass("Adding item"); 
+		
+    logStep.info("Step 4: Asserting that product is added to the shopping cart");		
+        String removeText = "REMOVE";
+        String removeText1 = "REMOVE";
+		String remove = driver.findElement(By.xpath("//button[text()='Remove']")).getText();
+		String remove1 = driver2.findElement(By.xpath("//button[text()='Remove']")).getText();
         Assert.assertEquals(remove, removeText);
         Assert.assertEquals(remove1, removeText1);
-        System.out.println("Multiple products are added to the shopping cart");
-        System.out.println("Multiple products are added to the shopping cart");
-        logStep.pass("Multiple products are added to the shopping cart"); 
+        System.out.println("Onesie product is added to the shopping cart");
+        System.out.println("Onesie product is added to the shopping cart");
+        logStep.pass("Onesie product is added to the shopping cart"); 
         
 		driver.close();
 		driver2.close();
