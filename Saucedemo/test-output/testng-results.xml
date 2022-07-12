@@ -1,17 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-06T00:27:23 CST" name="Default suite" finished-at="2021-11-06T00:28:01 CST" duration-ms="38097">
+  <suite started-at="2022-07-12T16:14:22 CDT" name="Suite" finished-at="2022-07-12T16:17:24 CDT" duration-ms="182434">
     <groups>
     </groups>
-    <test started-at="2021-11-06T00:27:23 CST" name="Default test" finished-at="2021-11-06T00:28:01 CST" duration-ms="38097">
+    <test started-at="2022-07-12T16:14:22 CDT" name="Test" finished-at="2022-07-12T16:17:24 CDT" duration-ms="182434">
+      <class name="saucedemoPage.Logout">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.Logout@703580bf]" started-at="2022-07-12T16:16:28 CDT" name="testNGAsserts" finished-at="2022-07-12T16:16:52 CDT" duration-ms="23574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- saucedemoPage.Logout -->
+      <class name="saucedemoPage.AddIem">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.AddIem@1d119efb]" started-at="2022-07-12T16:14:22 CDT" name="testNGAsserts" finished-at="2022-07-12T16:14:51 CDT" duration-ms="29423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- saucedemoPage.AddIem -->
+      <class name="saucedemoPage.AddItems">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.AddItems@470f1802]" started-at="2022-07-12T16:15:32 CDT" name="testNGAsserts" finished-at="2022-07-12T16:16:00 CDT" duration-ms="28133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- saucedemoPage.AddItems -->
+      <class name="saucedemoPage.Login_Fail">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.Login_Fail@cd3fee8]" started-at="2022-07-12T16:14:51 CDT" name="testNGAsserts" finished-at="2022-07-12T16:15:11 CDT" duration-ms="20155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- saucedemoPage.Login_Fail -->
+      <class name="saucedemoPage.Login">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.Login@3e2e18f2]" started-at="2022-07-12T16:15:11 CDT" name="testNGAsserts" finished-at="2022-07-12T16:15:32 CDT" duration-ms="20804" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- saucedemoPage.Login -->
+      <class name="saucedemoPage.SortByPrice">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.SortByPrice@63021689]" started-at="2022-07-12T16:16:00 CDT" name="testNGAsserts" finished-at="2022-07-12T16:16:28 CDT" duration-ms="27835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNGAsserts -->
+      </class> <!-- saucedemoPage.SortByPrice -->
       <class name="saucedemoPage.Purchase_item">
-        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.Purchase_item@78b66d36]" started-at="2021-11-06T00:27:23 CST" name="testNGAsserts" finished-at="2021-11-06T00:28:01 CST" duration-ms="38003" status="PASS">
+        <test-method signature="testNGAsserts()[pri:0, instance:saucedemoPage.Purchase_item@3e92efc3]" started-at="2022-07-12T16:16:52 CDT" name="testNGAsserts" finished-at="2022-07-12T16:17:24 CDT" duration-ms="32322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testNGAsserts -->
       </class> <!-- saucedemoPage.Purchase_item -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

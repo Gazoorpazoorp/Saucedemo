@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="saucedemoPage.Purchase_item">
+      <class name="saucedemoPage.Login_Fail">
         <methods>
           <include name="testNGAsserts"/>
         </methods>
-      </class> <!-- saucedemoPage.Purchase_item -->
+      </class> <!-- saucedemoPage.Login_Fail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
