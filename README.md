@@ -2,7 +2,7 @@ The project is organized in Test cases, one for each of the 7 scenarios. Additio
 
 This project was done in an Ubuntu machine, so please note that there may be some differences if it wants to be executed in Windows, like the format the path of the drivers and the Excel file are written.
 
-When executed, it will be lunched in multiple browsers as per the requirements, being Chrome and Firefox at the same time.
+Test scrips run in parallel for Chrome and Firefox.
 
 The next POM dependencies were used to add ExtentReports and to be able to read data from Excel:
 
